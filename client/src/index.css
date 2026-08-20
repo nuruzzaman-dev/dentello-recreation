@@ -1,177 +1,40 @@
+/* Dentello editorial minimalism: white space, black serif headlines, Manrope UI copy, Dentello Aqua actions, asymmetrical healthcare photography. */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
-
 @custom-variant dark (&:is(.dark *));
 
-@theme inline {
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-popover: var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-destructive: var(--destructive);
-  --color-destructive-foreground: var(--destructive-foreground);
-  --color-border: var(--border);
-  --color-input: var(--input);
-  --color-ring: var(--ring);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
-}
-
-:root {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-600);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --radius: 0.65rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.235 0.015 65);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.235 0.015 65);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.235 0.015 65);
-  --secondary: oklch(0.98 0.001 286.375);
-  --secondary-foreground: oklch(0.4 0.015 65);
-  --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
-  --accent-foreground: oklch(0.141 0.005 285.823);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.623 0.214 259.815);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.235 0.015 65);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
-  --sidebar-accent-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.623 0.214 259.815);
-}
-
-.dark {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-500);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --background: oklch(0.141 0.005 285.823);
-  --foreground: oklch(0.85 0.005 65);
-  --card: oklch(0.21 0.006 285.885);
-  --card-foreground: oklch(0.85 0.005 65);
-  --popover: oklch(0.21 0.006 285.885);
-  --popover-foreground: oklch(0.85 0.005 65);
-  --secondary: oklch(0.24 0.006 286.033);
-  --secondary-foreground: oklch(0.7 0.005 65);
-  --muted: oklch(0.274 0.006 286.033);
-  --muted-foreground: oklch(0.705 0.015 286.067);
-  --accent: oklch(0.274 0.006 286.033);
-  --accent-foreground:  oklch(0.92 0.005 65);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.488 0.243 264.376);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --sidebar: oklch(0.21 0.006 285.885);
-  --sidebar-foreground: oklch(0.85 0.005 65);
-  --sidebar-accent: oklch(0.274 0.006 286.033);
-  --sidebar-accent-foreground:  oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.488 0.243 264.376);
-}
-
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-  button:not(:disabled),
-  [role="button"]:not([aria-disabled="true"]),
-  [type="button"]:not(:disabled),
-  [type="submit"]:not(:disabled),
-  [type="reset"]:not(:disabled),
-  a[href],
-  select:not(:disabled),
-  input[type="checkbox"]:not(:disabled),
-  input[type="radio"]:not(:disabled) {
-    @apply cursor-pointer;
-  }
-}
-
-@layer components {
-  /**
-   * Custom container utility that centers content and adds responsive padding.
-   *
-   * This overrides Tailwind's default container behavior to:
-   * - Auto-center content (mx-auto)
-   * - Add responsive horizontal padding
-   * - Set max-width for large screens
-   *
-   * Usage: <div className="container">...</div>
-   *
-   * For custom widths, use max-w-* utilities directly:
-   * <div className="max-w-6xl mx-auto px-4">...</div>
-   */
-  .container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem; /* 16px - mobile padding */
-    padding-right: 1rem;
-  }
-
-  .flex {
-    min-height: 0;
-    min-width: 0;
-  }
-
-  @media (min-width: 640px) {
-    .container {
-      padding-left: 1.5rem; /* 24px - tablet padding */
-      padding-right: 1.5rem;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .container {
-      padding-left: 2rem; /* 32px - desktop padding */
-      padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
-    }
-  }
-}
+:root { --background: oklch(0.985 0.003 80); --foreground: oklch(0.15 0.012 60); --primary: oklch(0.67 0.16 217); --primary-foreground: oklch(0.99 0 0); --border: oklch(0.88 0.005 80); --radius: .4rem; }
+@theme inline { --color-background: var(--background); --color-foreground: var(--foreground); --color-primary: var(--primary); --color-primary-foreground: var(--primary-foreground); --color-border: var(--border); }
+@layer base { * { @apply border-border; } body { @apply bg-background text-foreground; margin: 0; } a { color: inherit; text-decoration: none; } button, a { cursor: pointer; } }
+:root { font-family: 'Manrope', sans-serif; color: #151515; background: #fbfbfa; font-synthesis: none; }
+html { scroll-behavior: smooth; }
+body { overflow-x: hidden; }
+.site-shell { min-height: 100vh; background: #fbfbfa; }
+.site-nav { height: 82px; max-width: 1180px; margin: auto; padding: 0 30px; display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 20; }
+.brand { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; letter-spacing: -.04em; }
+.brand img { width: 26px; height: 26px; object-fit: contain; }
+.nav-links { display: flex; align-items: center; gap: 25px; margin-left: 120px; font-size: 10px; color: #303030; }
+.nav-links a { transition: color .18s ease; } .nav-links a:hover { color: #0aa8d9; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 0; background: #0aa8d9; color: white; font: 600 11px 'Manrope', sans-serif; padding: 13px 16px; border-radius: 2px; box-shadow: 0 2px 0 #057da5; transition: transform .18s ease, background .18s ease, box-shadow .18s ease; }
+.btn:hover { transform: translateY(-2px); background: #20b7e5; box-shadow: 0 4px 0 #057da5; } .btn:active { transform: scale(.97); }
+.btn-small { padding: 9px 17px; font-size: 10px; }.menu-toggle { display: none; background: transparent; border: 0; }
+.section-pad { max-width: 1180px; margin: auto; padding: 125px 30px; }
+.hero { padding-top: 70px; position: relative; display: grid; grid-template-columns: 1.18fr .82fr; grid-template-rows: auto auto; column-gap: 42px; }
+.hero-copy { padding-top: 8px; }.eyebrow { font: 600 9px 'Manrope', sans-serif; letter-spacing: .15em; text-transform: uppercase; color: #6e6e6e; margin: 0 0 14px; }
+h1,h2,h3 { font-family: 'DM Serif Display', serif; font-weight: 400; letter-spacing: -.045em; margin: 0; } h1 { font-size: clamp(53px, 5.6vw, 86px); line-height: .94; max-width: 700px; } h2 { font-size: clamp(33px, 4vw, 54px); line-height: .98; } h3 { font-size: 22px; line-height: 1; }
+.hero-meta { display: flex; align-items: end; gap: 80px; margin-top: 48px; max-width: 600px; }.hero-meta p { max-width: 280px; color: #555; font-size: 12px; line-height: 1.55; margin: 0 0 20px; }.clinic-note { display: flex; flex-direction: column; gap: 8px; padding-bottom: 2px; }.clinic-note strong { font: 400 20px 'DM Serif Display', serif; }.clinic-note span { font-size: 10px; color: #5a5a5a; white-space: nowrap; }
+.hero-portrait { grid-column: 2; grid-row: 1; height: 450px; overflow: hidden; }.hero-portrait img { width: 100%; height: 115%; object-fit: cover; object-position: center; display: block; }.hero-wide { grid-column: 1 / 2; margin-top: 34px; position: relative; }.hero-wide > img { display: block; width: 92%; height: 290px; object-fit: cover; }.quote-card { position: absolute; left: calc(92% + 42px); top: 42px; width: 210px; display: flex; gap: 13px; align-items: flex-start; }.quote-card img { width: 44px; height: 44px; object-fit: cover; }.quote-card strong { font: 400 14px/1.12 'DM Serif Display', serif; display: block; }.quote-card span { display: block; margin-top: 9px; font-size: 10px; color: #555; }.scroll-cue { position: absolute; right: 49px; bottom: 60px; font-size: 9px; color: #555; display: flex; flex-direction: column; align-items: center; gap: 10px; }.scroll-line { width: 1px; height: 42px; background: #c4c4c4; }
+.section-heading { display: flex; justify-content: space-between; align-items: end; gap: 24px; }.section-heading h2 { max-width: 430px; }.text-link { display: inline-flex; gap: 7px; align-items: center; font-size: 10px; font-weight: 700; color: #0b9dcf; white-space: nowrap; border-bottom: 1px solid #0b9dcf; padding-bottom: 4px; }
+.services-section { padding-top: 78px; }.service-rail { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 43px; }.service-card { height: 260px; position: relative; overflow: hidden; }.service-card img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .6s cubic-bezier(.23,1,.32,1); }.service-card:hover img { transform: scale(1.06); }.service-overlay { position: absolute; left: 0; right: 0; bottom: 0; padding: 18px 16px; background: linear-gradient(transparent, rgba(0,0,0,.65)); color: white; display: flex; justify-content: space-between; align-items: end; font: 400 15px 'DM Serif Display', serif; }
+.about-section { display: grid; grid-template-columns: .94fr 1.06fr; gap: 62px; align-items: center; }.about-copy > div:first-child p:not(.eyebrow) { max-width: 440px; color: #626262; font-size: 13px; line-height: 1.65; margin: 24px 0; }.about-image img { width: 100%; height: 475px; object-fit: cover; display: block; }.skill-card { margin-top: 55px; width: 74%; padding: 14px; background: #e8f8fb; display: grid; grid-template-columns: 1fr 67px 18px; gap: 14px; align-items: center; font: 600 11px 'Manrope'; }.skill-card img { width: 67px; height: 54px; object-fit: cover; }.skill-card svg { color: #0aa8d9; }
+.trusted { padding-top: 60px; text-align: center; }.trusted h2 { font-size: 31px; }.trusted-stack { height: 350px; position: relative; max-width: 560px; margin: 45px auto 0; }.trusted-stack img { position: absolute; width: 230px; height: 300px; object-fit: cover; top: 18px; box-shadow: 0 16px 40px rgba(0,0,0,.08); }.trust-back { left: 48px; transform: rotate(-12deg); }.trust-mid { left: 165px; top: 0 !important; transform: rotate(2deg); z-index: 2; }.trust-front { right: 42px; transform: rotate(12deg); z-index: 1; }
+.process { padding-top: 36px; }.process > div:first-child { text-align: center; }.process-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 70px; }.process-number { display: flex; align-items: baseline; gap: 7px; font-size: 11px; color: #111; }.process-number span { color: #888; font-size: 9px; }.process-card h3 { font-size: 18px; margin: 16px 0 8px; }.process-card p { font-size: 11px; line-height: 1.5; color: #777; min-height: 36px; }.process-card img { width: 100%; height: 150px; object-fit: cover; margin-top: 18px; }
+.cta-band { max-width: 980px; margin: 0 auto 120px; background: linear-gradient(105deg, #0c9db9, #1bafca); min-height: 255px; display: grid; grid-template-columns: 1fr .65fr; align-items: stretch; overflow: hidden; }.cta-band > div { padding: 48px 42px; color: white; }.cta-band .eyebrow { color: rgba(255,255,255,.72); }.cta-band h2 { font-size: 38px; max-width: 430px; }.btn-light { background: white; color: #0aa8d9; box-shadow: 0 2px 0 rgba(0,0,0,.18); margin-top: 25px; }.cta-band img { width: 100%; height: 100%; object-fit: cover; mix-blend-mode: normal; }
+.patients > h2, .plans > h2 { text-align: center; }.patient-story { display: grid; grid-template-columns: 1fr .85fr; gap: 50px; align-items: center; max-width: 890px; margin: 62px auto 0; }.story-tabs { display: flex; gap: 14px; border-bottom: 1px solid #ddd; padding-bottom: 12px; font-size: 9px; color: #888; }.story-tabs .active { color: #111; font-weight: 700; }.story-copy > p { font: 400 19px/1.35 'DM Serif Display'; max-width: 460px; margin: 32px 0 17px; }.story-copy strong, .story-copy small { display: block; }.story-copy strong { font-size: 11px; }.story-copy small { color: #777; font-size: 9px; margin-top: 4px; }.story-illustration { background: #e8f6fa; padding: 32px 20px 0; }.story-illustration img { width: 100%; height: 245px; object-fit: cover; object-position: center 20%; display: block; }
+.dentists { padding-top: 88px; }.dentist-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 44px; }.dentist-card img { width: 100%; height: 265px; object-fit: cover; display: block; }.dentist-card div { padding-top: 15px; }.dentist-card strong, .dentist-card span { display: block; }.dentist-card strong { font: 400 17px 'DM Serif Display'; }.dentist-card span { font-size: 10px; color: #777; margin-top: 4px; }
+.plans { padding-top: 80px; }.plan-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 45px; }.plan-card { background: white; border: 1px solid #e6e6e6; padding: 24px 20px 26px; min-height: 235px; }.plan-card.featured { border-color: #0aa8d9; box-shadow: 0 8px 26px rgba(10,168,217,.12); }.plan-card .price { display: block; font: 400 25px 'DM Serif Display'; margin: 10px 0 20px; }.btn-plan { width: 100%; padding: 10px; }.plan-card ul { padding: 16px 0 0; list-style: none; margin: 0; display: grid; gap: 8px; }.plan-card li { display: flex; align-items: center; gap: 7px; font-size: 10px; color: #555; }.plan-card li svg { color: #0aa8d9; }
+.blog { padding-top: 80px; padding-bottom: 145px; }.blog-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 43px; }.blog-grid article { display: grid; grid-template-columns: 42% 1fr; background: white; border: 1px solid #ececec; min-height: 140px; }.blog-grid img { width: 100%; height: 100%; min-height: 140px; object-fit: cover; }.blog-grid article > div { padding: 18px; }.blog-grid strong, .blog-grid span { display: block; }.blog-grid strong { font: 400 18px/1.06 'DM Serif Display'; }.blog-grid span { font-size: 9px; color: #777; margin-top: 20px; }
+.footer { background: #080808; color: #fff; padding: 80px max(30px, calc((100vw - 1180px)/2)) 26px; }.footer-top { display: flex; justify-content: space-between; gap: 50px; padding-bottom: 88px; }.footer-brand { color: #fff; }.footer-top h2 { font-size: 27px; max-width: 270px; margin-top: 28px; }.footer form { width: 320px; }.footer label { font-size: 10px; color: #aaa; display: block; margin-bottom: 10px; }.footer form div { display: flex; border-bottom: 1px solid #666; padding-bottom: 8px; }.footer input { background: transparent; border: 0; outline: 0; color: #fff; font: 11px 'Manrope'; flex: 1; }.footer input::placeholder { color: #666; }.footer form .btn { padding: 8px 13px; }.footer-bottom { border-top: 1px solid #272727; padding-top: 18px; display: flex; justify-content: space-between; font-size: 9px; color: #777; }.footer-bottom div { display: flex; gap: 22px; }.footer-bottom a:hover { color: white; }
+@media (max-width: 800px) { .site-nav { height: 70px; padding: 0 20px; }.nav-links { display: none; position: absolute; top: 62px; left: 20px; right: 20px; margin: 0; padding: 20px; background: white; box-shadow: 0 10px 30px rgba(0,0,0,.08); flex-direction: column; align-items: flex-start; gap: 16px; }.nav-links.is-open { display: flex; }.nav-cta { display: none; }.menu-toggle { display: block; }.section-pad { padding: 80px 20px; }.hero { padding-top: 38px; display: flex; flex-direction: column; gap: 25px; }.hero-portrait { order: -1; height: 380px; width: 75%; margin-left: auto; }.hero-copy { order: 0; }.hero-meta { gap: 25px; margin-top: 30px; align-items: start; }.clinic-note strong { font-size: 16px; }.clinic-note span { white-space: normal; line-height: 1.4; }.hero-wide { margin-top: 0; }.hero-wide > img { width: 100%; height: 220px; }.quote-card { position: static; margin-top: 18px; }.scroll-cue { display: none; } h1 { font-size: clamp(45px, 13vw, 68px); }.section-heading { align-items: start; flex-direction: column; }.service-rail { grid-template-columns: repeat(2, 1fr); gap: 8px; }.service-card { height: 210px; }.about-section { display: flex; flex-direction: column; gap: 36px; }.about-image img { height: 360px; }.skill-card { width: 100%; }.trusted-stack { transform: scale(.78); transform-origin: top center; margin-bottom: -60px; }.process-grid, .plan-grid, .dentist-grid, .blog-grid { grid-template-columns: 1fr; }.process-grid { gap: 40px; margin-top: 45px; }.cta-band { margin: 0 20px 75px; display: flex; flex-direction: column; }.cta-band > div { padding: 34px 28px; }.cta-band h2 { font-size: 33px; }.cta-band img { height: 230px; }.patient-story { grid-template-columns: 1fr; gap: 28px; margin-top: 40px; }.dentist-card img { height: 330px; }.footer { padding: 60px 20px 24px; }.footer-top { flex-direction: column; padding-bottom: 55px; }.footer form { width: 100%; }.footer-bottom { flex-direction: column; gap: 18px; }.footer-bottom div { flex-wrap: wrap; gap: 14px; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; } }
