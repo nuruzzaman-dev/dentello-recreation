@@ -70,10 +70,18 @@ export default function Home() {
 
     <main id="top">
       <section className="hero section-pad">
-        <Reveal className="hero-copy"><p className="eyebrow">A MODERN DENTAL CLINIC</p><h1>Compassionate Dental Care with Smile Brighter</h1><div className="hero-meta"><div><p>Odio eget praesent a aliquam metus amet at. Varius tempus ac.</p><a className="btn" href="#contact">Book an appointment <ArrowUpRight size={15} /></a></div><div className="clinic-note"><strong>Dental Clinic</strong><span>Open: Mon–Sat &nbsp; | &nbsp; 9 AM - 6 PM</span></div></div></Reveal>
-        <Reveal className="hero-portrait" delay={0.12}><img ref={heroImage} src={images.hero} alt="Dentist caring for a patient" /></Reveal>
-        <Reveal className="hero-wide" delay={0.22}><img src={images.treatment} alt="Dental treatment in progress" /><div className="quote-card"><img src={images.dentist1} alt="Patient portrait" /><div><strong>Best dental care I've ever received!</strong><span>John D.</span></div></div></Reveal>
-        <div className="scroll-cue"><span>Scroll down</span><span className="scroll-line" /></div>
+        <div className="hero-container">
+          <div className="hero-left">
+            <Reveal className="hero-title-block"><p className="eyebrow">A MODERN DENTAL CLINIC</p><h1 className="hero-title">Compassionate Dental Care with Smile Brighter</h1></Reveal>
+            <Reveal className="hero-subgrid" delay={0.1}><div className="cta-block"><p className="cta-text">Odio eget praesent a aliquam metus amet at. Varius tempus ac.</p><a href="#contact" className="btn custom-btn">Book an appointment <ArrowUpRight size={15} /></a></div><div className="info-badge"><h3>Dental Clinic</h3><p>Open: Mon–Sat &nbsp;|&nbsp; 9 AM - 6 PM</p></div></Reveal>
+            <Reveal className="hero-image-left" delay={0.18}><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80" alt="Dental examination" /></Reveal>
+          </div>
+          <div className="hero-right">
+            <Reveal className="hero-image-right" delay={0.12}><img ref={heroImage} src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=80" alt="Patient receiving treatment" /></Reveal>
+            <Reveal className="review-card" delay={0.2}><img src="https://i.pravatar.cc/100?img=12" alt="John D." className="avatar" /><div className="review-text"><p className="quote">&quot;Best dental care I've ever received!&quot;</p><span className="author">John D.</span></div></Reveal>
+            <div className="scroll-indicator"><span>Scroll down</span><div className="arrow">↓</div></div>
+          </div>
+        </div>
       </section>
 
       <section id="services" className="section-pad services-section"><Reveal><SectionHeading action="View more services">Delivering excellence in dental care services</SectionHeading></Reveal><div className="service-rail">{services.map(([src, title], i) => <Reveal key={title} delay={i * .07} className="service-card"><img src={src} alt={title} /><div className="service-overlay"><span>{title}</span><ArrowUpRight size={17} /></div></Reveal>)}</div></section>

@@ -1,5 +1,12 @@
 # Dentello refinement tasks
 
+## Hero refinement
+
+- [x] Replace the current hero markup with the supplied left/right column structure.
+- [x] Use the supplied online hero images, review avatar, and scroll indicator structure.
+- [x] Preserve Dentello button styling while matching the supplied spacing and responsive rules.
+- [x] Verify desktop/mobile hero rendering and save a new checkpoint.
+
 - [x] Convert the trusted-results section into a hover-expanding row of equal-height images with consistent gaps.
 - [x] Audit all landing-page sections for missing or weak imagery.
 - [x] Add appropriate online dental imagery without changing the reference button design.
