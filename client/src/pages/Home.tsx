@@ -12,10 +12,12 @@ const img = (file: string) => `${CDN}${file}`;
 const images = {
   hero: "/manus-storage/dentello-hero_080373ab.jpg",
   treatment: img("69e082ebd0ecc5c0a0532971_Hero%20Image%2001.webp"),
-  service1: img("69e082ebd0ecc5c0a05322ac_Service%20Image%2008.webp"),
-  service2: img("69e082ebd0ecc5c0a05322ab_Service%20Image%2007.webp"),
-  service3: img("69e082ebd0ecc5c0a05322aa_Service%20Image%2006.webp"),
-  service4: img("69e082ebd0ecc5c0a05322a9_Service%20Image%2005.webp"),
+  service1: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=88",
+  service2: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1200&q=88",
+  service3: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1200&q=88",
+  service4: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=1200&q=88",
+  blog1: "https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=1200&q=88",
+  blog2: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=1200&q=88",
   about: img("69e082ebd0ecc5c0a0532976_About%20Image%2001.webp"),
   trusted1: img("69e082ebd0ecc5c0a0532972_Trast%20Image%2001.webp"),
   trusted2: img("69e082ebd0ecc5c0a0532969_Trast%20Image%2002.webp"),
@@ -90,7 +92,7 @@ export default function Home() {
           <div className="hero-left">
             <Reveal className="hero-title-block"><p className="eyebrow">A MODERN DENTAL CLINIC</p><h1 className="hero-title">Compassionate Dental Care with Smile Brighter</h1></Reveal>
             <Reveal className="hero-subgrid" delay={0.1}><div className="cta-block"><p className="cta-text">Odio eget praesent a aliquam metus amet at. Varius tempus ac.</p><a href="#contact" className="btn custom-btn">Book an appointment <ArrowUpRight size={15} /></a></div><div className="info-badge"><h3>Dental Clinic</h3><p>Open: Mon–Sat &nbsp;|&nbsp; 9 AM - 6 PM</p></div></Reveal>
-            <Reveal className="hero-image-left" delay={0.18}><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=85" alt="Dental examination" /></Reveal>
+            <Reveal className="hero-image-left hero-video" delay={0.18}><video autoPlay muted loop playsInline preload="metadata" poster={img("69e082ebd0ecc5c0a0532971_Hero%20Image%2001.webp")} aria-label="Muted dental care video"><source src="https://res.cloudinary.com/gn8mdjia/video/upload/f_auto,q_auto/18203708-hd_1920_1080_60fps.mp4" type="video/mp4" /></video></Reveal>
           </div>
           <div className="hero-right">
             <Reveal className="hero-image-right" delay={0.12}><img ref={heroImage} src={img("69e082ebd0ecc5c0a0532971_Hero%20Image%2001.webp")} alt="Patient receiving treatment" /></Reveal>
@@ -116,7 +118,7 @@ export default function Home() {
 
       <section data-gsap-section className="section-pad plans"><Reveal><h2>Explore our customizable dental care plans</h2></Reveal><div className="plan-grid">{plans.map((plan, i) => <Reveal className={`plan-card ${i === 1 ? "featured" : ""}`} key={plan.name} delay={i * .08}><p className="eyebrow">{plan.name}</p><strong className="price">{plan.price}</strong><a className="btn btn-plan" href="#contact">Get started</a><ul>{plan.items.map(item => <li key={item}><Star size={11} fill="currentColor" />{item}</li>)}</ul></Reveal>)}</div></section>
 
-      <section id="blog" data-gsap-section className="section-pad blog"><Reveal><SectionHeading action="View all blog">Expert tips for maintaining healthy teeth</SectionHeading></Reveal><div className="blog-grid"><article><img src={images.service3} alt="Family dental health" /><div><p className="eyebrow">BEST PRACTICES FOR FAMILY DENTAL HEALTH</p><strong>Make every smile a healthy habit.</strong><span>Esther Howard · Dec 22, 2024</span></div></article><article><img src={images.service2} alt="Technology in dental care" /><div><p className="eyebrow">HOW TECHNOLOGY IMPROVES DENTAL CARE</p><strong>Care shaped by better technology.</strong><span>Jenny Wilson · Dec 23, 2024</span></div></article></div></section>
+      <section id="blog" data-gsap-section className="section-pad blog"><Reveal><SectionHeading action="View all blog">Expert tips for maintaining healthy teeth</SectionHeading></Reveal><div className="blog-grid"><article><img src={images.blog1} alt="Family dental health" /><div><p className="eyebrow">BEST PRACTICES FOR FAMILY DENTAL HEALTH</p><strong>Make every smile a healthy habit.</strong><span>Esther Howard · Dec 22, 2024</span></div></article><article><img src={images.blog2} alt="Technology in dental care" /><div><p className="eyebrow">HOW TECHNOLOGY IMPROVES DENTAL CARE</p><strong>Care shaped by better technology.</strong><span>Jenny Wilson · Dec 23, 2024</span></div></article></div></section>
     </main>
 
     <footer data-gsap-section className="footer"><div className="footer-top"><div><a className="brand footer-brand" href="#top"><img src={img("69e082ebd0ecc5c0a0532942_Nav%20Logo.svg")} alt="" /><span>Dentello</span></a><h2>Your trusted partner in happiness and health.</h2></div><form onSubmit={(e) => e.preventDefault()}><label htmlFor="email">Stay in the loop</label><div><input id="email" placeholder="Enter your email" type="email" /><button className="btn" type="submit">Submit</button></div></form></div><div className="footer-bottom"><span>© 2025 Dentello. All rights reserved.</span><div><a href="#top">Home</a><a href="#about">About</a><a href="#contact">Contact</a><a href="#services">Services</a><a href="#blog">Blog</a></div></div></footer>

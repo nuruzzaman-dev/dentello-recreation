@@ -1,5 +1,12 @@
 # Dentello refinement tasks
 
+## Media update
+
+- [x] Replace the hero lower-left image with the supplied Cloudinary muted autoplay video.
+- [x] Restore or replace missing services and blog imagery with reliable dental-care assets.
+- [x] Verify video/image loading on desktop and mobile and save a new checkpoint.
+
+
 ## Premium refinement pass
 
 - [x] Audit all buttons and normalize primary/secondary neo-brutalist CTA states.
