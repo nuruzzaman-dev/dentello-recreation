@@ -1,5 +1,13 @@
 # Dentello refinement tasks
 
+## Premium refinement pass
+
+- [x] Audit all buttons and normalize primary/secondary neo-brutalist CTA states.
+- [x] Refactor patient journeys into dynamic tabs or a smooth horizontal slider.
+- [x] Audit every image source and replace broken or weak assets.
+- [x] Add GSAP ScrollTrigger entrance, card, and footer transitions without layout thrashing.
+- [x] Verify mobile touch targets, responsive spacing, reduced-motion behavior, and production build.
+
 ## Hero refinement
 
 ### Screenshot fidelity pass
