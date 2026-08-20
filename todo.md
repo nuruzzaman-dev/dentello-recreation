@@ -1,5 +1,14 @@
 # Dentello refinement tasks
 
+## Final visual polish
+
+- [x] Refine trusted-results panel widths and preserve balanced gaps on hover and mobile.
+- [x] Align the process and patient journey sections with consistent max-width, heading scale, and vertical rhythm.
+- [x] Correct typography, section padding, card spacing, and responsive hierarchy after screenshot review.
+- [x] Redesign the footer composition to feel more intentional and attractive.
+- [x] Capture fresh desktop/mobile screenshots, self-review, run build QA, and checkpoint.
+
+
 ## Media update
 
 - [x] Replace the hero lower-left image with the supplied Cloudinary muted autoplay video.
