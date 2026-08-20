@@ -1,5 +1,14 @@
 # Dentello refinement tasks
 
+## Full redesign pass
+
+- [x] Define a new visual system and map every brief requirement to a redesigned page section.
+- [x] Recompose the hero and first-scroll transition into a new Dentello signature composition.
+- [x] Rebuild service, expert-care, process, patient, plans, blog, CTA, navigation, and footer layouts with varied editorial structures.
+- [x] Rework responsive geometry and motion as one coherent system.
+- [x] Self-audit screenshots against the complete brief, correct visible issues, and run final QA.
+
+
 ## Attached-content improvement
 
 - [x] Read and analyze the attached content in full.
