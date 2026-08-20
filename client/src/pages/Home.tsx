@@ -20,12 +20,13 @@ const images = {
   trusted1: img("69e082ebd0ecc5c0a0532972_Trast%20Image%2001.webp"),
   trusted2: img("69e082ebd0ecc5c0a0532969_Trast%20Image%2002.webp"),
   trusted3: img("69e082ebd0ecc5c0a053296d_Trast%20Image%2003.webp"),
+  trusted4: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=900&q=85",
   process1: img("69e082ebd0ecc5c0a053296a_Process%20Image%2001.webp"),
   process2: img("69e082ebd0ecc5c0a0532963_Process%20Image%2002.png"),
   process3: img("69e082ebd0ecc5c0a0532968_Process%20Image%2003.png"),
   dentist1: "/manus-storage/dentello-dentist_cc265215.jpg",
-  dentist2: img("69e082ebd0ecc5c0a0532960_Team%20Image%2002.webp"),
-  dentist3: img("69e082ebd0ecc5c0a0532961_Team%20Image%2003.webp"),
+  dentist2: "https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=900&q=85",
+  dentist3: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=900&q=85",
   cta: "/manus-storage/dentello-smile_8546efd1.jpg",
 };
 
@@ -79,7 +80,7 @@ export default function Home() {
 
       <section id="about" className="section-pad about-section"><div className="about-copy"><Reveal><p className="eyebrow">WHY DENTELLO</p><h2>Expert Care for Lifelong Dental Health</h2><p>At Dentello, we believe a healthy smile is the foundation of a happy life. With our team of highly skilled dental professionals and state-of-the-art technology, every visit is shaped around your comfort.</p><a className="text-link" href="#contact">More about <ArrowUpRight size={14} /></a></Reveal><Reveal className="skill-card" delay={.12}><span>Skilled dentists</span><img src={images.dentist1} alt="Skilled dentist" /><ArrowUpRight size={16} /></Reveal></div><Reveal className="about-image" delay={.14}><img src={images.about} alt="Dentist smiling with patient" /></Reveal></section>
 
-      <section className="trusted section-pad"><Reveal><h2>Trusted care exceptional results<br />every time</h2></Reveal><div className="trusted-stack"><img className="trust-back" src={images.trusted1} alt="Dental care result" /><img className="trust-mid" src={images.trusted2} alt="Dental care result" /><img className="trust-front" src={images.trusted3} alt="Dental care result" /></div></section>
+      <section className="trusted section-pad"><Reveal><h2>Trusted care exceptional results<br />every time</h2><p className="trusted-hint">Hover a result to explore</p></Reveal><div className="trusted-row">{[images.trusted1, images.trusted2, images.trusted3, images.trusted4].map((src, i) => <div className={`trusted-panel ${i === 1 ? "is-featured" : ""}`} key={src}><img src={src} alt={`Dental care result ${i + 1}`} /><div className="trusted-caption"><span>0{i + 1}</span><strong>{["Gentle care", "Modern precision", "Confident smiles", "Thoughtful follow-up"][i]}</strong></div></div>)}</div></section>
 
       <section className="section-pad process"><Reveal><h2>Seamless dental experience from<br />start to finish</h2></Reveal><div className="process-grid">{[["01", "Oral Assessment", images.process1], ["02", "Teeth Restoration", images.process2], ["03", "Care Consultation", images.process3]].map(([num, title, photo], i) => <Reveal key={num} delay={i * .1} className="process-card"><div className="process-number">{num}<span>Step</span></div><h3>{title}</h3><p>Vitae pretium a faucibus elit dolor. Morbi quam venenatis sagittis.</p><img src={photo} alt={title} /></Reveal>)}</div></section>
 
