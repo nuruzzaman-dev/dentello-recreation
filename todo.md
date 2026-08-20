@@ -1,5 +1,13 @@
 # Dentello refinement tasks
 
+## Attached-content improvement
+
+- [x] Read and analyze the attached content in full.
+- [x] Map the useful guidance to Dentello sections, typography, interactions, and content.
+- [x] Implement the applicable improvements without regressing existing media or responsive behavior.
+- [x] Capture screenshots, self-review, run build QA, and save a new checkpoint.
+
+
 ## Final visual polish
 
 - [x] Refine trusted-results panel widths and preserve balanced gaps on hover and mobile.
