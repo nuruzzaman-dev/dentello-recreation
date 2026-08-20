@@ -2,6 +2,14 @@
 
 ## Hero refinement
 
+### Screenshot fidelity pass
+
+- [x] Match screenshot hero image sources and crop directions.
+- [x] Refine hero proportions, headline scale, testimonial position, and scroll cue placement.
+- [x] Update CTA to the hard-offset neo-brutalist interaction shown in the screenshot.
+- [x] Verify desktop/mobile hero fidelity and checkpoint the change.
+
+
 - [x] Replace the current hero markup with the supplied left/right column structure.
 - [x] Use the supplied online hero images, review avatar, and scroll indicator structure.
 - [x] Preserve Dentello button styling while matching the supplied spacing and responsive rules.

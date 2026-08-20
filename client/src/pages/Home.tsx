@@ -74,11 +74,11 @@ export default function Home() {
           <div className="hero-left">
             <Reveal className="hero-title-block"><p className="eyebrow">A MODERN DENTAL CLINIC</p><h1 className="hero-title">Compassionate Dental Care with Smile Brighter</h1></Reveal>
             <Reveal className="hero-subgrid" delay={0.1}><div className="cta-block"><p className="cta-text">Odio eget praesent a aliquam metus amet at. Varius tempus ac.</p><a href="#contact" className="btn custom-btn">Book an appointment <ArrowUpRight size={15} /></a></div><div className="info-badge"><h3>Dental Clinic</h3><p>Open: Mon–Sat &nbsp;|&nbsp; 9 AM - 6 PM</p></div></Reveal>
-            <Reveal className="hero-image-left" delay={0.18}><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80" alt="Dental examination" /></Reveal>
+            <Reveal className="hero-image-left" delay={0.18}><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=85" alt="Dental examination" /></Reveal>
           </div>
           <div className="hero-right">
-            <Reveal className="hero-image-right" delay={0.12}><img ref={heroImage} src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=80" alt="Patient receiving treatment" /></Reveal>
-            <Reveal className="review-card" delay={0.2}><img src="https://i.pravatar.cc/100?img=12" alt="John D." className="avatar" /><div className="review-text"><p className="quote">&quot;Best dental care I've ever received!&quot;</p><span className="author">John D.</span></div></Reveal>
+            <Reveal className="hero-image-right" delay={0.12}><img ref={heroImage} src={img("69e082ebd0ecc5c0a0532971_Hero%20Image%2001.webp")} alt="Patient receiving treatment" /></Reveal>
+            <Reveal className="review-card" delay={0.2}><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=180&q=85" alt="John D." className="avatar" /><div className="review-text"><p className="quote">&quot;Best dental care I've ever received!&quot;</p><span className="author">John D.</span></div></Reveal>
             <div className="scroll-indicator"><span>Scroll down</span><div className="arrow">↓</div></div>
           </div>
         </div>
